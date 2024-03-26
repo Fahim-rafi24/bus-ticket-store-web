@@ -29,7 +29,8 @@
 </head>
 <body class="min-h-screen bg-white">
 
-
+<!-- header section -->
+<header>
 <!-- nav bar -->
     <nav class="bg-white fixed w-full z-20 top-0 start-0 border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -131,7 +132,7 @@
 <!-- coupon code display section -->
     <section class="lg:flex lg:justify-between w-[90vw] md:w-[70vw] lg:w-[80vw] my-10 mx-auto">
     <!-- orange coupon -->
-        <div class="flex mb-5 rounded-lg w-[90vw] md:w-[70vw] lg:w-[573px] h-[150px] md:h-[220px] bg-[#FFBF0F] raleway">
+        <div class="flex transform hover:scale-110 glass mb-5 rounded-lg w-[90vw] md:w-[70vw] lg:w-[573px] h-[150px] md:h-[220px] bg-[#FFBF0F] raleway">
             <div class="w-[60vw] ml-3 mt-3 md:ml-10 md:mt-10">
                 <h3 class="text-3xl text-black md:text-5xl black">15% OFF</h3>
                 <h4 class="text-xl text-black md:text-2xl black">on your next purchase</h4>
@@ -144,7 +145,7 @@
             </div>
         </div>
     <!-- pink coupon -->
-        <div class="flex border rounded-lg w-[90vw] md:w-[70vw] lg:w-[573px] h-[150px] md:h-[220px] bg-[#F78C9C] raleway">
+        <div class="flex transform hover:scale-110 glass border rounded-lg w-[90vw] md:w-[70vw] lg:w-[573px] h-[150px] md:h-[220px] bg-[#F78C9C] raleway">
             <div class="w-[60vw] ml-3 mt-3 md:ml-10 md:mt-10">
                 <h3 class="text-3xl text-black md:text-5xl black">20% OFF</h3>
                 <h4 class="text-xl text-black md:text-2xl black">on your next purchase</h4>
@@ -163,10 +164,89 @@
         <button class="btn btn-outline btn-success border-[#1DD100] text-[#1DD100] roboto">see All Offer</button>
     </div>
 
+</header>
 
 
 <!-- main seat saction -->
-<main>
+<main class="bg-[#F7F8F8] rounded-t-[40px] md:rounded-t-[80px] border-t-2 border-[#1DD100] w-full mt-14">
+
+
+
+
+
+
+
+    <!-- root section of div -->
+    <section id="bus-root-section border w-[80%] mx-auto" class="text-center pt-36">
+
+        <div id="top-paragraph-div">
+            <h1 class="text-[#030712] text-[40px] font-extrabold raleway">K.R. Paribahan</h1>
+            <p class="text-[#03071299] inter">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+
+        <div id="bottom-root-div" class="flex mt-10 w-[90%] h-[478px] lg:w-[1170px] lg:h-[408px]  bg-white mx-auto rounded-[50px]">
+            <div class="w-[70%]">
+                <!-- top -->
+                <div class="flex justify-between p-4">
+                    <div class="flex">
+                        <img class="" src="/images/bus-logo.png" alt="">
+                        <div class="pl-3">
+                            <h4 class="text-[#030712] text-[32px] font-black raleway">Greenline Paribahan</h4>
+                            <h6 class="text-[#03071299] text-[16px] inter">Coach-009-WEB ! AC_Business</h6>
+                        </div>
+                    </div>
+                    <div class="flex ml-5 w-[180px] h-[58px] border-[#1DD100] bg-[#1DD10026] rounded-lg">
+                        <img src="/images/seat-green.png" alt="">
+                        <p class="mt-3 ml-2 roboto">
+                            <!-- seat show display -->
+                            <span>1</span>
+                            Seats left
+                        </p>
+                    </div>
+                </div>
+
+                <!-- bottom -->
+                <div class="flex justify-center items-center w-[808px] h-[258px] bg-[#F7F8F8] rounded-[20px] ml-2 raleway">
+                    <div class="w-[95%] h-[90%]">
+                        <div class=" flex justify-between px-3 py-5 border-b-2 border-dotted">
+                            <h6 class="text-[18px] text-[#03071299]">Route</h6>
+                            <h4 class="text-[18px] text-[#030712] font-black">Dhaka-Sylhet</h4>
+                        </div>
+                        <div class="flex justify-between px-3 py-5 border-b-2 border-dotted">
+                            <h6 class="text-[18px] text-[#03071299]">Departure Time</h6>
+                            <h4 class="text-[18px] text-[#030712] font-black">9:00 PM</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="w-[10%]"><img src="/images/info-devider.png" alt=""></div>
+            <div class="w-[20%]"></div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- seat section of div -->
+    <section id="bus-seat-section">
+    </section>
+
+
+
 </main>
 
 
@@ -177,34 +257,41 @@
 
 
 <!-- footer asction -->
-<footer class="w-full h-[457px] bg-[#030712]">
-
+<footer class="glass w-full min-h-[457px] lg:h-[457px] bg-[#030712]">
 
 <!-- top footer -->
-    <div class="flex w-[80vw] h-[60%]">
-        <div>
-            <h3 class="text-2xl ">P-Ticket</h3>
-            <h5>P-Ticket is a digital platform to make your <br> daily commuting better.</h5>
+    <div class="lg:flex justify-between w-[90vw] lg:h-[60%] mx-auto">
+        <!-- top- left -->
+        <div class="mt-20 inter">
+            <h3 class="text-[36px] text-white">P-Ticket</h3>
+            <h5 class="text-[18px] text-[#FFFFFFCC]">P-Ticket is a digital platform to make your <br> daily commuting better.</h5>
         </div>
 
-
-        <div></div>
+        <!-- top right -->
+        <div class="mt-20 my-4 raleway">
+            <div class="text-xl">Download our app</div>
+            <div class="flex ">
+                <div class="transform hover:scale-110">
+                    <a href="https://play.google.com/store/apps?hl=en_US&gl=US"><img src="/images/play.png" alt=""></a>
+                </div>
+            </div>
+        </div>
     </div>
-
 
 <!-- center footer -->
     <div class="w-[90vw] border-dashed border-b-2 mx-auto"></div>
 
-
     <!-- bottom footer -->
-    <div class="w-[80vw] h-[40%] mx-auto">
+    <div class="lg:flex pt-7 justify-between w-[90vw] lg:h-[40%] mx-auto inter">
+        <div>@all rights reserved, P-Ticket services limited.2024</div>
+        <div class="flex text-[16px] text-white py-5">
+            <div class="mr-8">Terms & condition</div>
+            <div class="mr-8">Return & refund policy</div>
+            <div class="mr-8">Privacy policy</div>
+        </div>
     </div>
 
-
 </footer>
-
-
-
 
 
 
