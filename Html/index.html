@@ -177,37 +177,43 @@
 
 
     <!-- root section of div -->
-    <section id="bus-root-section border w-[80%] mx-auto" class="text-center pt-36">
+    <section id="" class="bus-root-section w-[80%] mx-auto text-center pt-36">
+
+
+
 
         <div id="top-paragraph-div">
             <h1 class="text-[#030712] text-[40px] font-extrabold raleway">K.R. Paribahan</h1>
             <p class="text-[#03071299] inter">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
         </div>
 
-        <div id="bottom-root-div" class="flex mt-10 w-[90%] h-[478px] lg:w-[1170px] lg:h-[408px]  bg-white mx-auto rounded-[50px]">
-            <div class="w-[70%]">
+
+        <div id="bottom-root-div" class="lg:flex mt-10 w-[90%] lg:w-[1170px] lg:h-[408px]  bg-white mx-auto rounded-[50px]">
+            <div class="lg:w-[70%]">
                 <!-- top -->
-                <div class="flex justify-between p-4">
-                    <div class="flex">
-                        <img class="" src="/images/bus-logo.png" alt="">
-                        <div class="pl-3">
+                <div class="md:flex justify-between p-4">
+                    <div class="flex py-1">
+                        <img class="hidden lg:block w-30 h-24" src="/images/bus-logo.png" alt="">
+                        <img class="block lg:hidden w-20 h-24 md:w-30 md:h-24" src="/images/bus-logo.png" alt="">
+
+
+                        <div class="pl-3 py-1">
                             <h4 class="text-[#030712] text-[32px] font-black raleway">Greenline Paribahan</h4>
                             <h6 class="text-[#03071299] text-[16px] inter">Coach-009-WEB ! AC_Business</h6>
                         </div>
                     </div>
-                    <div class="flex ml-5 w-[180px] h-[58px] border-[#1DD100] bg-[#1DD10026] rounded-lg">
-                        <img src="/images/seat-green.png" alt="">
+                    <div class="flex mt-7  ml-5 w-[180px] h-[58px] border-[#1DD100] bg-[#1DD10026] rounded-lg">
+                        <img src="/images/seat-green.png">
                         <p class="mt-3 ml-2 roboto">
                             <!-- seat show display -->
-                            <span>1</span>
+                            <span id="seat-num-dislay-id">1</span>
                             Seats left
                         </p>
                     </div>
                 </div>
-
                 <!-- bottom -->
-                <div class="flex justify-center items-center w-[808px] h-[258px] bg-[#F7F8F8] rounded-[20px] ml-2 raleway">
-                    <div class="w-[95%] h-[90%]">
+                <div class="flex justify-center items-center w-[95%] md:w-[98%] lg:w-[808px] bg-[#F7F8F8] rounded-[20px] ml-2 raleway">
+                    <div class="w-[80%] lg:w-[95%]">
                         <div class=" flex justify-between px-3 py-5 border-b-2 border-dotted">
                             <h6 class="text-[18px] text-[#03071299]">Route</h6>
                             <h4 class="text-[18px] text-[#030712] font-black">Dhaka-Sylhet</h4>
@@ -216,9 +222,131 @@
                             <h6 class="text-[18px] text-[#03071299]">Departure Time</h6>
                             <h4 class="text-[18px] text-[#030712] font-black">9:00 PM</h4>
                         </div>
+                        <div class="md:flex justify-between px-3 py-5 border-dotted">
+                            <div class="bg-[#0307120D] text-xs lg:text-base text-[#030712] w-[232px] h-[56px] py-4 rounded-3xl inter">Boarding Point - Laxmipur</div>
+                            <div class="bg-[#0307120D] text-xs lg:text-base text-[#030712] w-[232px] h-[56px] my-2 md:my-0 py-4 rounded-3xl inter">Dropping Point - Bogura</div>
+                            <div class="bg-[#0307120D] text-xs lg:text-base text-[#030712] w-[232px] h-[56px] py-4 rounded-3xl inter">Est. Time - 11 Hour</div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="hidden lg:block lg:w-[10%]"><img src="/images/info-devider.png" alt=""></div>
+            <div class="lg:w-[20%]">
+                <div class=" mt-32">
+                    <img src="/images/taka.png" class="ml-[44%] md:ml-[47%] lg:ml-24">
+                    <h1 class="text-[32px] text-[#030712] font-black raleway">550 TK</h1>
+                    <h3 class="text-[24px] text-[#030712] raleway">Perset</h3>
+                </div>
+            </div>
+        </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="lg:flex w-[90%] md:w-[98%] lg:w-[1170px] bg-white border-4 rounded-[30px] mx-auto mt-10 px-2 py-3 md:p-5 lg:p-10">
+<!-- top seat display section -->
+            <div class="lg:w-[60%] mb-5 md:mb-0">
+                <!-- Select Your Seat -->
+                <div class="text-2xl font-bold text-black border-b border-dashed py-3 text-left">Select Your Seat</div>
+                <!-- seat logo -->
+                <div class="flex justify-between py-3  text-xl text-black border-b border-dashed">
+                    <span class="flex">
+                        <img src="/images/seat-gray.png">
+                        Available
+                    </span>
+                    <span  class="flex text-[#1DD100]">
+                        <img src="/images/seat-green-filled.png">
+                        Selected
+                    </span>
+                </div>
+                <!-- driver seat -->
+                <div class="flex justify-end my-3">
+                    <button id="button-wheel" class="btn bg-white"><img src="/images/wheel.png"></button>
+                </div>
+                <!-- seat button section -->
+                <div class="flex mt-5">
+                    <!-- seat site alphabet -->
+                    <div class="inline-grid grid-cols-1 gap-4">
+                        <h6 class="mt-4">A</h6>
+                        <h6 class="mt-4">B</h6>
+                        <h6 class="mt-4">C</h6>
+                        <h6 class="mt-4">D</h6>
+                        <h6 class="mt-4">E</h6>
+                        <h6 class="mt-4">F</h6>
+                        <h6 class="mt-4">G</h6>
+                        <h6 class="mt-4">H</h6>
+                        <h6 class="mt-4">I</h6>
+                        <h6 class="mt-4">J</h6>
+                    </div>
+                    <!-- left side seat -->
+                    <div>
+                        <div class="inline-grid grid-cols-1 gap-4">
+                            <button id="A1" class="btn ml-1 md:ml-5 bg-white">A1</button>
+                            <button id="B1" class="btn ml-1 md:ml-5 bg-white">B1</button>
+                            <button id="C1" class="btn ml-1 md:ml-5 bg-white">C1</button>
+                            <button id="D1" class="btn ml-1 md:ml-5 bg-white">D1</button>
+                            <button id="E1" class="btn ml-1 md:ml-5 bg-white">E1</button>
+                            <button id="F1" class="btn ml-1 md:ml-5 bg-white">F1</button>
+                            <button id="G1" class="btn ml-1 md:ml-5 bg-white">G1</button>
+                            <button id="H1" class="btn ml-1 md:ml-5 bg-white">H1</button>
+                            <button id="I1" class="btn ml-1 md:ml-5 bg-white">I1</button>
+                            <button id="J1" class="btn ml-1 md:ml-5 bg-white">J1</button>
+                        </div>
+                        <div class="inline-grid grid-cols-1 gap-4">
+                            <button id="A2" class="btn ml-1 md:ml-5 bg-white">A2</button>
+                            <button id="B2" class="btn ml-1 md:ml-5 bg-white">B2</button>
+                            <button id="C2" class="btn ml-1 md:ml-5 bg-white">C2</button>
+                            <button id="D2" class="btn ml-1 md:ml-5 bg-white">D2</button>
+                            <button id="E2" class="btn ml-1 md:ml-5 bg-white">E2</button>
+                            <button id="F2" class="btn ml-1 md:ml-5 bg-white">F2</button>
+                            <button id="G2" class="btn ml-1 md:ml-5 bg-white">G2</button>
+                            <button id="H2" class="btn ml-1 md:ml-5 bg-white">H2</button>
+                            <button id="I2" class="btn ml-1 md:ml-5 bg-white">I2</button>
+                            <button id="J2" class="btn ml-1 md:ml-5 bg-white">J2</button>
+                        </div>
+                    </div>
+                    <!-- right site seat -->
+                    <div>
+                        <div class="inline-grid grid-cols-1 gap-4">
+                            <button id="A3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">A3</button>
+                            <button id="B3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">B3</button>
+                            <button id="C3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">C3</button>
+                            <button id="D3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">D3</button>
+                            <button id="E3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">E3</button>
+                            <button id="F3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">F3</button>
+                            <button id="G3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">G3</button>
+                            <button id="H3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">H3</button>
+                            <button id="I3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">I3</button>
+                            <button id="J3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">J3</button>
+                        </div>
+                        <div class="inline-grid grid-cols-1 gap-4">
+                            <button id="A4" class="btn ml-1 md:ml-5 bg-white">A4</button>
+                            <button id="B4" class="btn ml-1 md:ml-5 bg-white">B4</button>
+                            <button id="C4" class="btn ml-1 md:ml-5 bg-white">C4</button>
+                            <button id="D4" class="btn ml-1 md:ml-5 bg-white">D4</button>
+                            <button id="E4" class="btn ml-1 md:ml-5 bg-white">E4</button>
+                            <button id="F4" class="btn ml-1 md:ml-5 bg-white">F4</button>
+                            <button id="G4" class="btn ml-1 md:ml-5 bg-white">G4</button>
+                            <button id="H4" class="btn ml-1 md:ml-5 bg-white">H4</button>
+                            <button id="I4" class="btn ml-1 md:ml-5 bg-white">I4</button>
+                            <button id="J4" class="btn ml-1 md:ml-5 bg-white">J4</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -226,9 +354,68 @@
 
 
 
-            <div class="w-[10%]"><img src="/images/info-devider.png" alt=""></div>
-            <div class="w-[20%]"></div>
+
+
+
+
+<!-- top seat buying section -->
+            <div class="lg:w-[40%] p-3">
+                <!-- Select Your Seat -->
+                <div class="text-2xl font-bold text-black border-b border-dashed py-3 text-left">Select Your Seat</div>
+                <!-- seat counting display -->
+                <div class="lg:w-[433px] h-auto lg:h-[335px] bg-[#F7F8F8]">
+dskfhio
+                </div>
+
+
+
+
+                <!-- passenger information -->
+                <form class="flex flex-col mt-3 space-y-4">
+                    <div class="flex flex-col">
+                        <label for="name" class="text-gray-700 font-medium mb-2">Passenger Name*</label>
+                        <input type="text" id="name" name="name" class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="phone" class="text-gray-700 font-medium mb-2">Phone Number*</label>
+                        <input type="text" id="phone" name="phone" class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="text-gray-700 font-medium mb-2">Email ID</label>
+                        <input type="text" id="email" name="email" class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white">
+                    </div>
+                    <div>
+                        <button type="button" class=" my-5 px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">Next</button>
+                        <div class="flex flex-row justify-between">
+                            <a href="https://policies.google.com/terms?hl=en-US" class="text-gray-500 underline hover:text-red-500">Terms and Conditions</a>
+                            <a href="https://support.google.com/chrome_webstore/answer/1060830?hl=en#:~:text=After%20you%20buy%20an%20item,the%20purchase%20in%20Google%20Payments." class="text-gray-500 underline hover:text-red-500">Cancellation Policy</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </section>
 
