@@ -22,9 +22,7 @@
 
     <!-- internal css -->
     <style>
-        .b{
-            background-image: url();
-        }
+        
     </style>
 </head>
 <body class="min-h-screen bg-white">
@@ -84,7 +82,7 @@
             <span class="text-[#1DD100]">F.R. Paribahan</span> 
         </h1>
         <p class="text-[10px] md:text-base font-medium text-[#FFFFFF] raleway">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-        <button class="relative bg-[#1DD100] text-black w-[170px] h-[65px] mt-11 rounded-lg mb-2">
+        <button onclick="goTickitSection()" id="go-to-tickit-section" class="relative bg-[#1DD100] text-black w-[170px] h-[65px] mt-11 rounded-lg mb-2">
             <span class="absolute inset-0 flex items-center justify-center transition-transform duration-300 transform scale-100 hover:scale-110 roboto">Buy Tickets</span>
         </button>
         </div>
@@ -132,7 +130,7 @@
 <!-- coupon code display section -->
     <section class="lg:flex lg:justify-between w-[90vw] md:w-[70vw] lg:w-[80vw] my-10 mx-auto">
     <!-- orange coupon -->
-        <div class="flex transform hover:scale-110 glass mb-5 rounded-lg w-[90vw] md:w-[70vw] lg:w-[573px] h-[150px] md:h-[220px] bg-[#FFBF0F] raleway">
+        <div onclick="orangeCoupon()" class="flex transform hover:scale-110 glass mb-5 rounded-lg w-[90vw] md:w-[70vw] lg:w-[573px] h-[150px] md:h-[220px] bg-[#FFBF0F] raleway">
             <div class="w-[60vw] ml-3 mt-3 md:ml-10 md:mt-10">
                 <h3 class="text-3xl text-black md:text-5xl black">15% OFF</h3>
                 <h4 class="text-xl text-black md:text-2xl black">on your next purchase</h4>
@@ -145,7 +143,7 @@
             </div>
         </div>
     <!-- pink coupon -->
-        <div class="flex transform hover:scale-110 glass border rounded-lg w-[90vw] md:w-[70vw] lg:w-[573px] h-[150px] md:h-[220px] bg-[#F78C9C] raleway">
+        <div onclick="pinkCoupon()" class="flex transform hover:scale-110 glass border rounded-lg w-[90vw] md:w-[70vw] lg:w-[573px] h-[150px] md:h-[220px] bg-[#F78C9C] raleway">
             <div class="w-[60vw] ml-3 mt-3 md:ml-10 md:mt-10">
                 <h3 class="text-3xl text-black md:text-5xl black">20% OFF</h3>
                 <h4 class="text-xl text-black md:text-2xl black">on your next purchase</h4>
@@ -177,7 +175,7 @@
 
 
     <!-- root section of div -->
-    <section id="" class="bus-root-section w-[80%] mx-auto text-center pt-36">
+    <section class="bus-root-section w-[80%] mx-auto text-center pt-36">
 
 
 
@@ -259,7 +257,7 @@
 
         <div class="lg:flex w-[90%] md:w-[98%] lg:w-[1170px] bg-white border-4 rounded-[30px] mx-auto mt-10 px-2 py-3 md:p-5 lg:p-10">
 <!-- top seat display section -->
-            <div class="lg:w-[60%] mb-5 md:mb-0">
+            <div id="main-tickit-section" class="lg:w-[60%] mb-5 md:mb-0">
                 <!-- Select Your Seat -->
                 <div class="text-2xl font-bold text-black border-b border-dashed py-3 text-left">Select Your Seat</div>
                 <!-- seat logo -->
@@ -295,55 +293,55 @@
                     <!-- left side seat -->
                     <div>
                         <div class="inline-grid grid-cols-1 gap-4">
-                            <button id="A1" class="btn ml-1 md:ml-5 bg-white">A1</button>
-                            <button id="B1" class="btn ml-1 md:ml-5 bg-white">B1</button>
-                            <button id="C1" class="btn ml-1 md:ml-5 bg-white">C1</button>
-                            <button id="D1" class="btn ml-1 md:ml-5 bg-white">D1</button>
-                            <button id="E1" class="btn ml-1 md:ml-5 bg-white">E1</button>
-                            <button id="F1" class="btn ml-1 md:ml-5 bg-white">F1</button>
-                            <button id="G1" class="btn ml-1 md:ml-5 bg-white">G1</button>
-                            <button id="H1" class="btn ml-1 md:ml-5 bg-white">H1</button>
-                            <button id="I1" class="btn ml-1 md:ml-5 bg-white">I1</button>
-                            <button id="J1" class="btn ml-1 md:ml-5 bg-white">J1</button>
+                            <button id="A1" class="btn seat-btn ml-1 md:ml-5 bg-white">A1</button>
+                            <button id="B1" class="btn seat-btn ml-1 md:ml-5 bg-white">B1</button>
+                            <button id="C1" class="btn seat-btn ml-1 md:ml-5 bg-white">C1</button>
+                            <button id="D1" class="btn seat-btn ml-1 md:ml-5 bg-white">D1</button>
+                            <button id="E1" class="btn seat-btn ml-1 md:ml-5 bg-white">E1</button>
+                            <button id="F1" class="btn seat-btn ml-1 md:ml-5 bg-white">F1</button>
+                            <button id="G1" class="btn seat-btn ml-1 md:ml-5 bg-white">G1</button>
+                            <button id="H1" class="btn seat-btn ml-1 md:ml-5 bg-white">H1</button>
+                            <button id="I1" class="btn seat-btn ml-1 md:ml-5 bg-white">I1</button>
+                            <button id="J1" class="btn seat-btn ml-1 md:ml-5 bg-white">J1</button>
                         </div>
                         <div class="inline-grid grid-cols-1 gap-4">
-                            <button id="A2" class="btn ml-1 md:ml-5 bg-white">A2</button>
-                            <button id="B2" class="btn ml-1 md:ml-5 bg-white">B2</button>
-                            <button id="C2" class="btn ml-1 md:ml-5 bg-white">C2</button>
-                            <button id="D2" class="btn ml-1 md:ml-5 bg-white">D2</button>
-                            <button id="E2" class="btn ml-1 md:ml-5 bg-white">E2</button>
-                            <button id="F2" class="btn ml-1 md:ml-5 bg-white">F2</button>
-                            <button id="G2" class="btn ml-1 md:ml-5 bg-white">G2</button>
-                            <button id="H2" class="btn ml-1 md:ml-5 bg-white">H2</button>
-                            <button id="I2" class="btn ml-1 md:ml-5 bg-white">I2</button>
-                            <button id="J2" class="btn ml-1 md:ml-5 bg-white">J2</button>
+                            <button id="A2" class="btn seat-btn ml-1 md:ml-5 bg-white">A2</button>
+                            <button id="B2" class="btn seat-btn ml-1 md:ml-5 bg-white">B2</button>
+                            <button id="C2" class="btn seat-btn ml-1 md:ml-5 bg-white">C2</button>
+                            <button id="D2" class="btn seat-btn ml-1 md:ml-5 bg-white">D2</button>
+                            <button id="E2" class="btn seat-btn ml-1 md:ml-5 bg-white">E2</button>
+                            <button id="F2" class="btn seat-btn ml-1 md:ml-5 bg-white">F2</button>
+                            <button id="G2" class="btn seat-btn ml-1 md:ml-5 bg-white">G2</button>
+                            <button id="H2" class="btn seat-btn ml-1 md:ml-5 bg-white">H2</button>
+                            <button id="I2" class="btn seat-btn ml-1 md:ml-5 bg-white">I2</button>
+                            <button id="J2" class="btn seat-btn ml-1 md:ml-5 bg-white">J2</button>
                         </div>
                     </div>
                     <!-- right site seat -->
                     <div>
                         <div class="inline-grid grid-cols-1 gap-4">
-                            <button id="A3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">A3</button>
-                            <button id="B3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">B3</button>
-                            <button id="C3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">C3</button>
-                            <button id="D3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">D3</button>
-                            <button id="E3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">E3</button>
-                            <button id="F3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">F3</button>
-                            <button id="G3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">G3</button>
-                            <button id="H3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">H3</button>
-                            <button id="I3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">I3</button>
-                            <button id="J3" class="btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">J3</button>
+                            <button id="A3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">A3</button>
+                            <button id="B3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">B3</button>
+                            <button id="C3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">C3</button>
+                            <button id="D3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">D3</button>
+                            <button id="E3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">E3</button>
+                            <button id="F3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">F3</button>
+                            <button id="G3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">G3</button>
+                            <button id="H3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">H3</button>
+                            <button id="I3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">I3</button>
+                            <button id="J3" class="btn seat-btn ml-1 md:ml-[35vw] lg:ml-[15vw] bg-white">J3</button>
                         </div>
                         <div class="inline-grid grid-cols-1 gap-4">
-                            <button id="A4" class="btn ml-1 md:ml-5 bg-white">A4</button>
-                            <button id="B4" class="btn ml-1 md:ml-5 bg-white">B4</button>
-                            <button id="C4" class="btn ml-1 md:ml-5 bg-white">C4</button>
-                            <button id="D4" class="btn ml-1 md:ml-5 bg-white">D4</button>
-                            <button id="E4" class="btn ml-1 md:ml-5 bg-white">E4</button>
-                            <button id="F4" class="btn ml-1 md:ml-5 bg-white">F4</button>
-                            <button id="G4" class="btn ml-1 md:ml-5 bg-white">G4</button>
-                            <button id="H4" class="btn ml-1 md:ml-5 bg-white">H4</button>
-                            <button id="I4" class="btn ml-1 md:ml-5 bg-white">I4</button>
-                            <button id="J4" class="btn ml-1 md:ml-5 bg-white">J4</button>
+                            <button id="A4" class="btn seat-btn ml-1 md:ml-5 bg-white">A4</button>
+                            <button id="B4" class="btn seat-btn ml-1 md:ml-5 bg-white">B4</button>
+                            <button id="C4" class="btn seat-btn ml-1 md:ml-5 bg-white">C4</button>
+                            <button id="D4" class="btn seat-btn ml-1 md:ml-5 bg-white">D4</button>
+                            <button id="E4" class="btn seat-btn ml-1 md:ml-5 bg-white">E4</button>
+                            <button id="F4" class="btn seat-btn ml-1 md:ml-5 bg-white">F4</button>
+                            <button id="G4" class="btn seat-btn ml-1 md:ml-5 bg-white">G4</button>
+                            <button id="H4" class="btn seat-btn ml-1 md:ml-5 bg-white">H4</button>
+                            <button id="I4" class="btn seat-btn ml-1 md:ml-5 bg-white">I4</button>
+                            <button id="J4" class="btn seat-btn ml-1 md:ml-5 bg-white">J4</button>
                         </div>
                     </div>
                 </div>
@@ -362,9 +360,57 @@
             <div class="lg:w-[40%] p-3">
                 <!-- Select Your Seat -->
                 <div class="text-2xl font-bold text-black border-b border-dashed py-3 text-left">Select Your Seat</div>
+                
+                
+                
+                
+                
                 <!-- seat counting display -->
-                <div class="lg:w-[433px] h-auto lg:h-[335px] bg-[#F7F8F8]">
-dskfhio
+                <div class="lg:w-[433px] rounded-[40px] my-5 p-3 bg-[#F7F8F8]">
+                    <div class="flex justify-between text-black border-b border-dashed py-3 text-left">
+                        <div>
+                            <span>seat</span>
+                            <span id="reserve-seat-display-section" class="text-green-500">40</span>
+                        </div><span>Class</span><span>Price</span>
+                    </div>
+                    <div id="seat-booking-info" class="flex justify-between text-black border-b py-3 text-left">
+                        
+                        
+                        
+                        
+                        
+                        <!-- show the tickit details when the customer buy the tickit -->
+                        <span id="C2">C2</span><span id="Economy">Economy</span><span id="550Tk">550</span>
+                    </div>
+                    <div class="flex justify-between text-black border-b py-3 my-5 text-left">
+                        <!-- total price display -->
+                        <span>Total Price:</span>
+                        <div>
+                            <span class="font-black">BDT:</span>
+                            <span id="total-price">550</span>
+                        </div>
+                    </div>
+                    <!-- coupon coad box -->
+                    <div>
+                        <form action="#" method="post">
+                            <div class="flex flex-col md:flex-row mb-4">
+                                <!-- coupon code box -->
+                                <input type="text" name="coupon" placeholder="Have any coupon?" id="coupon-input-box" class="flex-grow px-3 py-2 border rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-white">
+                                <!-- code btn -->
+                                <button id="coupon-coad-submit-btn"
+                                class="inline-flex items-center px-4 py-2 mt-5 md:mt-0 bg-[#1DD100] text-white rounded hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Apply</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- coupon code box end -->
+                    <div class="flex justify-between text-black border-b py-3 my-5 text-left">
+                        <!-- grand price display -->
+                        <span>Grand Total:</span>
+                        <div>
+                            <span class="font-black">BDT:</span>
+                            <span id="grand-total">550</span>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -385,7 +431,9 @@ dskfhio
                         <input type="text" id="email" name="email" class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white">
                     </div>
                     <div>
-                        <button type="button" class=" my-5 px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">Next</button>
+                        <a id="tickit-buying-complete" class="hidden" href="/Html/success.html">
+                            <button type="button" class=" my-5 px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">Next</button>
+                        </a>
                         <div class="flex flex-row justify-between">
                             <a href="https://policies.google.com/terms?hl=en-US" class="text-gray-500 underline hover:text-red-500">Terms and Conditions</a>
                             <a href="https://support.google.com/chrome_webstore/answer/1060830?hl=en#:~:text=After%20you%20buy%20an%20item,the%20purchase%20in%20Google%20Payments." class="text-gray-500 underline hover:text-red-500">Cancellation Policy</a>

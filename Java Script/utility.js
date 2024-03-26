@@ -1,15 +1,16 @@
 
 
-
-
-// // Get all button elements within the body
-// let buttons = document.querySelectorAll('body button');
-        
-// // Loop through each button and add the 'glass' class
-// buttons.forEach(function(button) {
-//     button.classList.add('glass');
-// });
-
+    // Function to scroll to the ticket section when the button is clicked
+    function goTickitSection() {
+        // Get the offset top position of the target section
+        const ticketSection = document.getElementById('main-tickit-section');
+        const offsetTop = ticketSection.offsetTop;
+        // Scroll to the ticket section smoothly
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
 
 
 
